@@ -1,8 +1,4 @@
 
-import { type } from "os"
-import path, { join } from "path"
-import { fileURLToPath } from "url"
-
 //----
 console.log("proyecto iniciado....\n")
 //---- inportante para que funcione tego que poner npm start -- get
