@@ -17,6 +17,8 @@ function input_parameters() {
             console.log(`Parametro ${i}: ${parameter}`)
             list.push(parameter.toLowerCase())
         }
+    }else{
+        console.log('no ingresaste ningun dato')
     }
     return  list
 }
@@ -66,6 +68,7 @@ function verify_post(parameter){
 //-------------------------------------------------------------------------------------//
 
 function fixed_parameters(lista_){
+    lista_||process.exit(1)//aca arregle porque me tiraba un error aca 
     const [para1,para2]=lista_
     const fixed_list=para1.concat(para2)
     // console.log(fixed_list)
